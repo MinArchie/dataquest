@@ -1137,7 +1137,6 @@ elif page.startswith("🗺️"):
         fig_risk = px.scatter(
             sdf, x="gmv", y="avg_review",
             size="order_count", color="risk_label",
-            text="customer_state",
             color_discrete_map=RISK_COLORS,
             size_max=50,
             hover_name="customer_state",
@@ -1145,8 +1144,17 @@ elif page.startswith("🗺️"):
         )
         fig_risk.add_hline(y=overall_review, line_dash="dash",line_color=SUBTEXT,line_width=1)
         fig_risk.add_vline(x=med_gmv, line_dash="dash", line_color=SUBTEXT, line_width=1)
-        fig_risk.update_traces(textposition="top center",
-                               textfont=dict(color=TEXT,size=10,family="Inter"))
+        # Only label the top 5 GMV states to avoid text overlap
+        top5_states = sdf.nlargest(5, "gmv")["customer_state"].tolist()
+        for _, row in sdf.iterrows():
+            if row["customer_state"] in top5_states:
+                fig_risk.add_annotation(
+                    x=row["gmv"], y=row["avg_review"],
+                    text=row["customer_state"],
+                    showarrow=False,
+                    font=dict(color=TEXT, size=10, family="Inter"),
+                    yshift=14,
+                )
         chart_layout(fig_risk, height=420,
                      title="Revenue vs Review — quadrant risk classification")
         fig_risk.update_xaxes(title="State GMV (R$)", tickprefix="R$", tickformat=".2s")
