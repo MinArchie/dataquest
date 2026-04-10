@@ -101,6 +101,18 @@ orders["delay_days"] = (
     .dt.total_seconds() / 86400
 )
 
+# Sanitize impossible negative elapsed times (timestamp ordering errors in source data)
+# carrier_pickup_days < 0 means carrier_date was recorded before approval — data entry error
+# last_mile_days < 0 means delivery recorded before carrier scan — data entry error
+neg_carrier = (orders["carrier_pickup_days"] < 0).sum()
+neg_lastmile = (orders["last_mile_days"] < 0).sum()
+orders.loc[orders["carrier_pickup_days"] < 0, "carrier_pickup_days"] = np.nan
+orders.loc[orders["last_mile_days"] < 0, "last_mile_days"] = np.nan
+if neg_carrier > 0:
+    print(f"      [FIX] Nulled {neg_carrier:,} negative carrier_pickup_days (timestamp ordering errors)")
+if neg_lastmile > 0:
+    print(f"      [FIX] Nulled {neg_lastmile:,} negative last_mile_days (timestamp ordering errors)")
+
 orders["is_late"] = (orders["delay_days"] > 0).astype("Int64")
 
 def assign_delay_bucket(d):
@@ -150,11 +162,12 @@ reviews["review_creation_date"]    = pd.to_datetime(reviews["review_creation_dat
 reviews["review_answer_timestamp"] = pd.to_datetime(reviews["review_answer_timestamp"], errors="coerce")
 reviews["review_score"] = pd.to_numeric(reviews["review_score"], errors="coerce")
 
-# Keep only first review per order
+# Keep the LATEST review per order (customers sometimes revise; most recent is most accurate)
 reviews_dedup = reviews.sort_values("review_creation_date").drop_duplicates(
-    subset="order_id", keep="first"
+    subset="order_id", keep="last"
 )
-print(f"      [OK] Reviews before dedup: {reviews.shape[0]:,} -> after: {reviews_dedup.shape[0]:,}")
+dupes_dropped = reviews.shape[0] - reviews_dedup.shape[0]
+print(f"      [OK] Reviews before dedup: {reviews.shape[0]:,} -> after: {reviews_dedup.shape[0]:,} ({dupes_dropped} duplicates removed, kept latest per order)")
 
 
 # ---- 6. AGGREGATE PAYMENTS ---------------------------------------
@@ -176,6 +189,14 @@ payments_agg = (
     .reset_index()
 )
 print(f"      [OK] Aggregated to {payments_agg.shape[0]:,} order-level rows")
+
+# Log any orders in orders_dataset that have no payment record
+all_order_ids = set(orders["order_id"])
+paid_order_ids = set(payments_agg["order_id"])
+orphan_orders = all_order_ids - paid_order_ids
+if orphan_orders:
+    print(f"      [WARN] {len(orphan_orders)} order(s) in orders_dataset with no payment record: {list(orphan_orders)[:5]}")
+    print(f"             These rows will have null payment columns in master CSV -- expected for edge cases.")
 
 
 # ---- 7. CLEAN CUSTOMERS ------------------------------------------

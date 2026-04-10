@@ -235,35 +235,35 @@
     "avg_actual_delivery_days": 12.472,
     "avg_delay_days": -11.332,
     "avg_approval_lag_hours": 10.518,
-    "avg_carrier_pickup_days": 2.845,
-    "avg_last_mile_days": 9.188,
+    "avg_carrier_pickup_days": 2.9,
+    "avg_last_mile_days": 9.194,
     "delay_bucket_breakdown": [
       {
         "delay_bucket": "1-3d Late",
         "count": 2991,
         "avg_delay_days": 1.402,
-        "avg_review_score": 3.725,
+        "avg_review_score": 3.722,
         "pct": 2.71
       },
       {
         "delay_bucket": "14+ days Late",
         "count": 1719,
         "avg_delay_days": 27.906,
-        "avg_review_score": 1.712,
+        "avg_review_score": 1.707,
         "pct": 1.56
       },
       {
         "delay_bucket": "4-7d Late",
         "count": 2023,
         "avg_delay_days": 5.105,
-        "avg_review_score": 2.283,
+        "avg_review_score": 2.284,
         "pct": 1.84
       },
       {
         "delay_bucket": "8-14d Late",
         "count": 1981,
         "avg_delay_days": 9.926,
-        "avg_review_score": 1.743,
+        "avg_review_score": 1.739,
         "pct": 1.8
       },
       {
@@ -277,7 +277,7 @@
         "delay_bucket": "Slightly Early (1-6d)",
         "count": 19583,
         "avg_delay_days": -4.171,
-        "avg_review_score": 4.143,
+        "avg_review_score": 4.142,
         "pct": 17.77
       },
       {
@@ -293,21 +293,21 @@
         "seller_state": "RS",
         "avg_delivery_days": 11.559,
         "avg_delay_days": -15.629,
-        "avg_review_score": 4.254,
+        "avg_review_score": 4.256,
         "order_count": 2169
       },
       {
         "seller_state": "RJ",
         "avg_delivery_days": 12.017,
         "avg_delay_days": -11.778,
-        "avg_review_score": 4.166,
+        "avg_review_score": 4.165,
         "order_count": 4685
       },
       {
         "seller_state": "SP",
         "avg_delivery_days": 12.277,
         "avg_delay_days": -10.6,
-        "avg_review_score": 4.054,
+        "avg_review_score": 4.053,
         "order_count": 78604
       },
       {
@@ -342,7 +342,7 @@
         "seller_state": "MG",
         "avg_delivery_days": 12.795,
         "avg_delay_days": -12.784,
-        "avg_review_score": 4.165,
+        "avg_review_score": 4.164,
         "order_count": 8603
       },
       {
@@ -393,7 +393,7 @@
         "seller_state": "BA",
         "avg_delivery_days": 13.846,
         "avg_delay_days": -12.099,
-        "avg_review_score": 4.159,
+        "avg_review_score": 4.161,
         "order_count": 624
       },
       {
@@ -437,70 +437,70 @@
         "customer_state": "SP",
         "avg_delivery_days": 8.724,
         "avg_delay_days": -10.512,
-        "avg_review_score": 4.179,
+        "avg_review_score": 4.177,
         "order_count": 46448
       },
       {
         "customer_state": "PR",
         "avg_delivery_days": 11.947,
         "avg_delay_days": -12.792,
-        "avg_review_score": 4.145,
+        "avg_review_score": 4.148,
         "order_count": 5649
       },
       {
         "customer_state": "MG",
         "avg_delivery_days": 11.983,
         "avg_delay_days": -12.641,
-        "avg_review_score": 4.122,
+        "avg_review_score": 4.121,
         "order_count": 12916
       },
       {
         "customer_state": "DF",
         "avg_delivery_days": 12.959,
         "avg_delay_days": -11.493,
-        "avg_review_score": 4.065,
+        "avg_review_score": 4.056,
         "order_count": 2355
       },
       {
         "customer_state": "SC",
         "avg_delivery_days": 14.998,
         "avg_delay_days": -10.868,
-        "avg_review_score": 4.047,
+        "avg_review_score": 4.048,
         "order_count": 4097
       },
       {
         "customer_state": "RJ",
         "avg_delivery_days": 15.148,
         "avg_delay_days": -11.304,
-        "avg_review_score": 3.874,
+        "avg_review_score": 3.875,
         "order_count": 14143
       },
       {
         "customer_state": "RS",
         "avg_delivery_days": 15.189,
         "avg_delay_days": -13.432,
-        "avg_review_score": 4.093,
+        "avg_review_score": 4.091,
         "order_count": 6134
       },
       {
         "customer_state": "GO",
         "avg_delivery_days": 15.403,
         "avg_delay_days": -11.596,
-        "avg_review_score": 4.039,
+        "avg_review_score": 4.04,
         "order_count": 2277
       },
       {
         "customer_state": "MS",
         "avg_delivery_days": 15.534,
         "avg_delay_days": -10.529,
-        "avg_review_score": 4.062,
+        "avg_review_score": 4.066,
         "order_count": 811
       },
       {
         "customer_state": "ES",
         "avg_delivery_days": 15.649,
         "avg_delay_days": -9.949,
-        "avg_review_score": 4.016,
+        "avg_review_score": 4.013,
         "order_count": 2225
       },
       {
@@ -514,28 +514,28 @@
         "customer_state": "MT",
         "avg_delivery_days": 17.962,
         "avg_delay_days": -13.896,
-        "avg_review_score": 4.008,
+        "avg_review_score": 4.007,
         "order_count": 1037
       },
       {
         "customer_state": "PE",
         "avg_delivery_days": 18.279,
         "avg_delay_days": -12.764,
-        "avg_review_score": 4.02,
+        "avg_review_score": 4.021,
         "order_count": 1746
       },
       {
         "customer_state": "BA",
         "avg_delivery_days": 19.248,
         "avg_delay_days": -10.289,
-        "avg_review_score": 3.861,
+        "avg_review_score": 3.862,
         "order_count": 3683
       },
       {
         "customer_state": "RN",
         "avg_delivery_days": 19.325,
         "avg_delay_days": -13.267,
-        "avg_review_score": 4.114,
+        "avg_review_score": 4.112,
         "order_count": 521
       },
       {
@@ -570,7 +570,7 @@
         "customer_state": "CE",
         "avg_delivery_days": 20.987,
         "avg_delay_days": -10.411,
-        "avg_review_score": 3.868,
+        "avg_review_score": 3.877,
         "order_count": 1426
       },
       {
@@ -584,21 +584,21 @@
         "customer_state": "MA",
         "avg_delivery_days": 21.649,
         "avg_delay_days": -9.225,
-        "avg_review_score": 3.761,
+        "avg_review_score": 3.758,
         "order_count": 800
       },
       {
         "customer_state": "PA",
         "avg_delivery_days": 23.754,
         "avg_delay_days": -13.569,
-        "avg_review_score": 3.835,
+        "avg_review_score": 3.842,
         "order_count": 1054
       },
       {
         "customer_state": "AL",
         "avg_delivery_days": 24.489,
         "avg_delay_days": -8.057,
-        "avg_review_score": 3.83,
+        "avg_review_score": 3.821,
         "order_count": 427
       },
       {
@@ -625,33 +625,33 @@
     ]
   },
   "review_score_intelligence": {
-    "avg_review_overall": 4.034,
-    "pct_detractors": 16.09,
-    "pct_passives": 8.37,
-    "pct_promoters": 75.54,
-    "avg_review_ontime": 4.212,
-    "avg_review_late": 2.55,
-    "avg_review_4_7d_late": 2.283,
-    "avg_review_14plus_late": 1.712,
+    "avg_review_overall": 4.033,
+    "pct_detractors": 16.1,
+    "pct_passives": 8.39,
+    "pct_promoters": 75.5,
+    "avg_review_ontime": 4.211,
+    "avg_review_late": 2.548,
+    "avg_review_4_7d_late": 2.284,
+    "avg_review_14plus_late": 1.707,
     "review_by_delay_bucket": [
       {
         "delay_bucket": "1-3d Late",
-        "avg_review_score": 3.725,
+        "avg_review_score": 3.722,
         "order_count": 2959
       },
       {
         "delay_bucket": "14+ days Late",
-        "avg_review_score": 1.712,
+        "avg_review_score": 1.707,
         "order_count": 1658
       },
       {
         "delay_bucket": "4-7d Late",
-        "avg_review_score": 2.283,
+        "avg_review_score": 2.284,
         "order_count": 1973
       },
       {
         "delay_bucket": "8-14d Late",
-        "avg_review_score": 1.743,
+        "avg_review_score": 1.739,
         "order_count": 1929
       },
       {
@@ -661,7 +661,7 @@
       },
       {
         "delay_bucket": "Slightly Early (1-6d)",
-        "avg_review_score": 4.143,
+        "avg_review_score": 4.142,
         "order_count": 19465
       },
       {
@@ -693,7 +693,7 @@
       },
       {
         "product_category_name_english": "office_furniture",
-        "avg_review_score": 3.49,
+        "avg_review_score": 3.488,
         "order_count": 1677
       },
       {
@@ -712,14 +712,14 @@
         "order_count": 261
       },
       {
+        "product_category_name_english": "fashio_female_clothing",
+        "avg_review_score": 3.75,
+        "order_count": 48
+      },
+      {
         "product_category_name_english": "party_supplies",
         "avg_review_score": 3.767,
         "order_count": 43
-      },
-      {
-        "product_category_name_english": "fashio_female_clothing",
-        "avg_review_score": 3.812,
-        "order_count": 48
       }
     ],
     "review_by_category_best10": [
@@ -730,7 +730,7 @@
       },
       {
         "product_category_name_english": "food_drink",
-        "avg_review_score": 4.314,
+        "avg_review_score": 4.31,
         "order_count": 277
       },
       {
@@ -787,7 +787,7 @@
       },
       {
         "seller_state": "BA",
-        "avg_review_score": 4.09,
+        "avg_review_score": 4.092,
         "order_count": 641
       },
       {
@@ -852,12 +852,12 @@
       },
       {
         "seller_state": "PR",
-        "avg_review_score": 4.073,
+        "avg_review_score": 4.074,
         "order_count": 8610
       },
       {
         "seller_state": "RJ",
-        "avg_review_score": 4.102,
+        "avg_review_score": 4.1,
         "order_count": 4773
       },
       {
@@ -872,12 +872,12 @@
       },
       {
         "seller_state": "RS",
-        "avg_review_score": 4.215,
+        "avg_review_score": 4.217,
         "order_count": 2177
       },
       {
         "seller_state": "SC",
-        "avg_review_score": 4.095,
+        "avg_review_score": 4.096,
         "order_count": 4045
       },
       {
@@ -887,7 +887,7 @@
       },
       {
         "seller_state": "SP",
-        "avg_review_score": 4.006,
+        "avg_review_score": 4.005,
         "order_count": 79661
       }
     ],
@@ -899,7 +899,7 @@
       },
       {
         "customer_state": "AL",
-        "avg_review_score": 3.73,
+        "avg_review_score": 3.721,
         "order_count": 441
       },
       {
@@ -914,52 +914,52 @@
       },
       {
         "customer_state": "BA",
-        "avg_review_score": 3.814,
+        "avg_review_score": 3.815,
         "order_count": 3746
       },
       {
         "customer_state": "CE",
-        "avg_review_score": 3.806,
+        "avg_review_score": 3.815,
         "order_count": 1467
       },
       {
         "customer_state": "DF",
-        "avg_review_score": 4.014,
+        "avg_review_score": 4.004,
         "order_count": 2389
       },
       {
         "customer_state": "ES",
-        "avg_review_score": 3.991,
+        "avg_review_score": 3.988,
         "order_count": 2224
       },
       {
         "customer_state": "GO",
-        "avg_review_score": 3.993,
+        "avg_review_score": 3.994,
         "order_count": 2296
       },
       {
         "customer_state": "MA",
-        "avg_review_score": 3.704,
+        "avg_review_score": 3.702,
         "order_count": 818
       },
       {
         "customer_state": "MG",
-        "avg_review_score": 4.087,
+        "avg_review_score": 4.085,
         "order_count": 13030
       },
       {
         "customer_state": "MS",
-        "avg_review_score": 4.042,
+        "avg_review_score": 4.045,
         "order_count": 817
       },
       {
         "customer_state": "MT",
-        "avg_review_score": 3.977,
+        "avg_review_score": 3.976,
         "order_count": 1044
       },
       {
         "customer_state": "PA",
-        "avg_review_score": 3.784,
+        "avg_review_score": 3.792,
         "order_count": 1060
       },
       {
@@ -969,7 +969,7 @@
       },
       {
         "customer_state": "PE",
-        "avg_review_score": 3.953,
+        "avg_review_score": 3.955,
         "order_count": 1784
       },
       {
@@ -979,17 +979,17 @@
       },
       {
         "customer_state": "PR",
-        "avg_review_score": 4.105,
+        "avg_review_score": 4.107,
         "order_count": 5712
       },
       {
         "customer_state": "RJ",
-        "avg_review_score": 3.81,
+        "avg_review_score": 3.811,
         "order_count": 14379
       },
       {
         "customer_state": "RN",
-        "avg_review_score": 4.08,
+        "avg_review_score": 4.078,
         "order_count": 525
       },
       {
@@ -1004,12 +1004,12 @@
       },
       {
         "customer_state": "RS",
-        "avg_review_score": 4.056,
+        "avg_review_score": 4.053,
         "order_count": 6213
       },
       {
         "customer_state": "SC",
-        "avg_review_score": 4.004,
+        "avg_review_score": 4.005,
         "order_count": 4141
       },
       {
@@ -1019,7 +1019,7 @@
       },
       {
         "customer_state": "SP",
-        "avg_review_score": 4.129,
+        "avg_review_score": 4.127,
         "order_count": 47128
       },
       {
@@ -1034,34 +1034,34 @@
         "freight_value": -0.0404,
         "actual_delivery_days": 0.5968,
         "price": -0.0038,
-        "review_score": -0.2286
+        "review_score": -0.2289
       },
       "freight_value": {
         "delay_days": -0.0404,
         "freight_value": 1.0,
         "actual_delivery_days": 0.2147,
         "price": 0.4142,
-        "review_score": -0.0365
+        "review_score": -0.0362
       },
       "actual_delivery_days": {
         "delay_days": 0.5968,
         "freight_value": 0.2147,
         "actual_delivery_days": 1.0,
         "price": 0.0624,
-        "review_score": -0.3046
+        "review_score": -0.3047
       },
       "price": {
         "delay_days": -0.0038,
         "freight_value": 0.4142,
         "actual_delivery_days": 0.0624,
         "price": 1.0,
-        "review_score": -0.0043
+        "review_score": -0.0038
       },
       "review_score": {
-        "delay_days": -0.2286,
-        "freight_value": -0.0365,
-        "actual_delivery_days": -0.3046,
-        "price": -0.0043,
+        "delay_days": -0.2289,
+        "freight_value": -0.0362,
+        "actual_delivery_days": -0.3047,
+        "price": -0.0038,
         "review_score": 1.0
       }
     }
@@ -1086,7 +1086,7 @@
         "seller_id": "4a3ca9315b744ce9f8e9374361493884",
         "total_gmv": 200472.92,
         "order_count": 1806,
-        "avg_review_score": 3.805,
+        "avg_review_score": 3.802,
         "avg_delay_days": -8.955
       },
       {
@@ -1100,7 +1100,7 @@
         "seller_id": "7c67e1448b00f6e969d365cea6b010ab",
         "total_gmv": 187923.89,
         "order_count": 982,
-        "avg_review_score": 3.342,
+        "avg_review_score": 3.341,
         "avg_delay_days": -10.833
       },
       {
@@ -1114,21 +1114,21 @@
         "seller_id": "da8622b14eb17ae2831f4ac5b9dab84a",
         "total_gmv": 160236.57,
         "order_count": 1314,
-        "avg_review_score": 4.06,
+        "avg_review_score": 4.067,
         "avg_delay_days": -10.528
       },
       {
         "seller_id": "7a67c85e85bb2ce8582c35f2203ad736",
         "total_gmv": 141745.53,
         "order_count": 1160,
-        "avg_review_score": 4.233,
+        "avg_review_score": 4.236,
         "avg_delay_days": -11.161
       },
       {
         "seller_id": "1025f0e2d44d7041d6cf58b6550e0bfa",
         "total_gmv": 138968.55,
         "order_count": 915,
-        "avg_review_score": 3.86,
+        "avg_review_score": 3.846,
         "avg_delay_days": -10.389
       },
       {
@@ -1149,7 +1149,7 @@
         "seller_id": "6560211a19b47992c3666cc44a7e94c0",
         "total_gmv": 123304.83,
         "order_count": 1854,
-        "avg_review_score": 3.91,
+        "avg_review_score": 3.907,
         "avg_delay_days": -11.01
       },
       {
@@ -1177,14 +1177,14 @@
         "seller_id": "1f50f920176fa81dab994f9023523100",
         "total_gmv": 106939.21,
         "order_count": 1404,
-        "avg_review_score": 3.986,
+        "avg_review_score": 3.988,
         "avg_delay_days": -10.126
       },
       {
         "seller_id": "cc419e0650a3c5ba77189a1882b7556a",
         "total_gmv": 104288.42,
         "order_count": 1706,
-        "avg_review_score": 4.069,
+        "avg_review_score": 4.063,
         "avg_delay_days": -12.346
       },
       {
@@ -1221,8 +1221,15 @@
         "seller_id": "2eb70248d66e0e3ef83659f71b244378",
         "total_gmv": 42628.61,
         "order_count": 202,
-        "avg_review_score": 2.712,
+        "avg_review_score": 2.716,
         "avg_delay_days": -9.405
+      },
+      {
+        "seller_id": "602044f2c16190c2c6e45eb35c2e21cb",
+        "total_gmv": 3739.16,
+        "order_count": 50,
+        "avg_review_score": 2.893,
+        "avg_delay_days": -7.433
       },
       {
         "seller_id": "54965bbe3e4f07ae045b90b0b8541f52",
@@ -1249,7 +1256,7 @@
         "seller_id": "8e6d7754bc7e0f22c96d255ebda59eba",
         "total_gmv": 14497.27,
         "order_count": 85,
-        "avg_review_score": 2.969,
+        "avg_review_score": 2.977,
         "avg_delay_days": -5.62
       },
       {
@@ -1258,13 +1265,6 @@
         "order_count": 52,
         "avg_review_score": 3.0,
         "avg_delay_days": 1.354
-      },
-      {
-        "seller_id": "602044f2c16190c2c6e45eb35c2e21cb",
-        "total_gmv": 3739.16,
-        "order_count": 50,
-        "avg_review_score": 3.036,
-        "avg_delay_days": -7.433
       },
       {
         "seller_id": "bbad7e518d7af88a0897397ffdca1979",
@@ -1298,37 +1298,37 @@
         "seller_id": "b2479f944e1b90cf8a5de1bbfde284d6",
         "total_gmv": 4752.51,
         "order_count": 103,
-        "avg_review_score": 3.338,
+        "avg_review_score": 3.292,
         "avg_delay_days": -7.847
       },
       {
         "seller_id": "7c67e1448b00f6e969d365cea6b010ab",
         "total_gmv": 187923.89,
         "order_count": 982,
-        "avg_review_score": 3.342,
+        "avg_review_score": 3.341,
         "avg_delay_days": -10.833
       },
       {
-        "seller_id": "88460e8ebdecbfecb5f9601833981930",
-        "total_gmv": 31546.55,
-        "order_count": 248,
-        "avg_review_score": 3.362,
-        "avg_delay_days": -10.288
+        "seller_id": "2a261b5b644fa05f4f2700eb93544f2c",
+        "total_gmv": 5355.0,
+        "order_count": 51,
+        "avg_review_score": 3.341,
+        "avg_delay_days": -8.397
       }
     ],
-    "pct_sellers_below_3_review": 1.4,
+    "pct_sellers_below_3_review": 1.63,
     "seller_state_concentration": [
       {
         "seller_state": "SP",
         "seller_count": 1849,
         "total_gmv": 8753396.21,
-        "avg_review": 4.006
+        "avg_review": 4.005
       },
       {
         "seller_state": "PR",
         "seller_count": 349,
         "total_gmv": 1261887.21,
-        "avg_review": 4.073
+        "avg_review": 4.074
       },
       {
         "seller_state": "MG",
@@ -1340,25 +1340,25 @@
         "seller_state": "RJ",
         "seller_count": 171,
         "total_gmv": 843984.22,
-        "avg_review": 4.102
+        "avg_review": 4.1
       },
       {
         "seller_state": "SC",
         "seller_count": 190,
         "total_gmv": 632426.07,
-        "avg_review": 4.095
+        "avg_review": 4.096
       },
       {
         "seller_state": "RS",
         "seller_count": 129,
         "total_gmv": 378559.54,
-        "avg_review": 4.215
+        "avg_review": 4.217
       },
       {
         "seller_state": "BA",
         "seller_count": 19,
         "total_gmv": 285561.56,
-        "avg_review": 4.09
+        "avg_review": 4.092
       },
       {
         "seller_state": "DF",
@@ -1457,8 +1457,8 @@
         "avg_review": 1.0
       }
     ],
-    "bottom15pct_sellers_pct_late_deliveries": 12.89,
-    "bottom15pct_sellers_pct_1star_reviews": 17.37
+    "bottom15pct_sellers_pct_late_deliveries": 12.78,
+    "bottom15pct_sellers_pct_1star_reviews": 17.3
   },
   "customer_geography": {
     "orders_by_customer_state_top10": [
@@ -1466,70 +1466,70 @@
         "customer_state": "SP",
         "order_count": 41375,
         "total_gmv": 5202955.05,
-        "avg_review_score": 4.129,
+        "avg_review_score": 4.127,
         "avg_delivery_days": 8.724
       },
       {
         "customer_state": "RJ",
         "order_count": 12762,
         "total_gmv": 1824092.67,
-        "avg_review_score": 3.81,
+        "avg_review_score": 3.811,
         "avg_delivery_days": 15.148
       },
       {
         "customer_state": "MG",
         "order_count": 11544,
         "total_gmv": 1585308.03,
-        "avg_review_score": 4.087,
+        "avg_review_score": 4.085,
         "avg_delivery_days": 11.984
       },
       {
         "customer_state": "RS",
         "order_count": 5432,
         "total_gmv": 750304.02,
-        "avg_review_score": 4.056,
+        "avg_review_score": 4.053,
         "avg_delivery_days": 15.189
       },
       {
         "customer_state": "PR",
         "order_count": 4998,
         "total_gmv": 683083.76,
-        "avg_review_score": 4.105,
+        "avg_review_score": 4.107,
         "avg_delivery_days": 11.947
       },
       {
         "customer_state": "SC",
         "order_count": 3612,
         "total_gmv": 520553.34,
-        "avg_review_score": 4.004,
+        "avg_review_score": 4.005,
         "avg_delivery_days": 15.002
       },
       {
         "customer_state": "BA",
         "order_count": 3358,
         "total_gmv": 511349.99,
-        "avg_review_score": 3.814,
+        "avg_review_score": 3.815,
         "avg_delivery_days": 19.248
       },
       {
         "customer_state": "DF",
         "order_count": 2125,
         "total_gmv": 302603.94,
-        "avg_review_score": 4.014,
+        "avg_review_score": 4.004,
         "avg_delivery_days": 12.959
       },
       {
         "customer_state": "ES",
         "order_count": 2025,
         "total_gmv": 275037.31,
-        "avg_review_score": 3.991,
+        "avg_review_score": 3.988,
         "avg_delivery_days": 15.649
       },
       {
         "customer_state": "GO",
         "order_count": 2007,
         "total_gmv": 294591.95,
-        "avg_review_score": 3.993,
+        "avg_review_score": 3.994,
         "avg_delivery_days": 15.403
       }
     ],
@@ -1538,112 +1538,112 @@
         "customer_state": "SP",
         "order_count": 41375,
         "total_gmv": 5202955.05,
-        "avg_review_score": 4.129,
+        "avg_review_score": 4.127,
         "avg_delivery_days": 8.724
       },
       {
         "customer_state": "RJ",
         "order_count": 12762,
         "total_gmv": 1824092.67,
-        "avg_review_score": 3.81,
+        "avg_review_score": 3.811,
         "avg_delivery_days": 15.148
       },
       {
         "customer_state": "MG",
         "order_count": 11544,
         "total_gmv": 1585308.03,
-        "avg_review_score": 4.087,
+        "avg_review_score": 4.085,
         "avg_delivery_days": 11.984
       },
       {
         "customer_state": "RS",
         "order_count": 5432,
         "total_gmv": 750304.02,
-        "avg_review_score": 4.056,
+        "avg_review_score": 4.053,
         "avg_delivery_days": 15.189
       },
       {
         "customer_state": "PR",
         "order_count": 4998,
         "total_gmv": 683083.76,
-        "avg_review_score": 4.105,
+        "avg_review_score": 4.107,
         "avg_delivery_days": 11.947
       },
       {
         "customer_state": "SC",
         "order_count": 3612,
         "total_gmv": 520553.34,
-        "avg_review_score": 4.004,
+        "avg_review_score": 4.005,
         "avg_delivery_days": 15.002
       },
       {
         "customer_state": "BA",
         "order_count": 3358,
         "total_gmv": 511349.99,
-        "avg_review_score": 3.814,
+        "avg_review_score": 3.815,
         "avg_delivery_days": 19.248
       },
       {
         "customer_state": "DF",
         "order_count": 2125,
         "total_gmv": 302603.94,
-        "avg_review_score": 4.014,
+        "avg_review_score": 4.004,
         "avg_delivery_days": 12.959
       },
       {
         "customer_state": "ES",
         "order_count": 2025,
         "total_gmv": 275037.31,
-        "avg_review_score": 3.991,
+        "avg_review_score": 3.988,
         "avg_delivery_days": 15.649
       },
       {
         "customer_state": "GO",
         "order_count": 2007,
         "total_gmv": 294591.95,
-        "avg_review_score": 3.993,
+        "avg_review_score": 3.994,
         "avg_delivery_days": 15.403
       },
       {
         "customer_state": "PE",
         "order_count": 1648,
         "total_gmv": 262788.03,
-        "avg_review_score": 3.953,
+        "avg_review_score": 3.955,
         "avg_delivery_days": 18.279
       },
       {
         "customer_state": "CE",
         "order_count": 1327,
         "total_gmv": 227254.71,
-        "avg_review_score": 3.806,
+        "avg_review_score": 3.815,
         "avg_delivery_days": 20.987
       },
       {
         "customer_state": "PA",
         "order_count": 970,
         "total_gmv": 178947.81,
-        "avg_review_score": 3.784,
+        "avg_review_score": 3.792,
         "avg_delivery_days": 23.754
       },
       {
         "customer_state": "MT",
         "order_count": 903,
         "total_gmv": 156453.53,
-        "avg_review_score": 3.977,
+        "avg_review_score": 3.976,
         "avg_delivery_days": 17.962
       },
       {
         "customer_state": "MA",
         "order_count": 740,
         "total_gmv": 119648.22,
-        "avg_review_score": 3.704,
+        "avg_review_score": 3.702,
         "avg_delivery_days": 21.649
       },
       {
         "customer_state": "MS",
         "order_count": 709,
         "total_gmv": 116812.64,
-        "avg_review_score": 4.042,
+        "avg_review_score": 4.045,
         "avg_delivery_days": 15.534
       },
       {
@@ -1664,14 +1664,14 @@
         "customer_state": "RN",
         "order_count": 482,
         "total_gmv": 83034.98,
-        "avg_review_score": 4.08,
+        "avg_review_score": 4.078,
         "avg_delivery_days": 19.325
       },
       {
         "customer_state": "AL",
         "order_count": 411,
         "total_gmv": 80314.81,
-        "avg_review_score": 3.73,
+        "avg_review_score": 3.721,
         "avg_delivery_days": 24.489
       },
       {
@@ -1729,64 +1729,64 @@
         "customer_state": "PA",
         "order_count": 970,
         "total_gmv": 178947.81,
-        "avg_review_score": 3.784,
+        "avg_review_score": 3.792,
         "avg_delivery_days": 23.754
-      },
-      {
-        "customer_state": "CE",
-        "order_count": 1327,
-        "total_gmv": 227254.71,
-        "avg_review_score": 3.806,
-        "avg_delivery_days": 20.987
       },
       {
         "customer_state": "RJ",
         "order_count": 12762,
         "total_gmv": 1824092.67,
-        "avg_review_score": 3.81,
+        "avg_review_score": 3.811,
         "avg_delivery_days": 15.148
+      },
+      {
+        "customer_state": "CE",
+        "order_count": 1327,
+        "total_gmv": 227254.71,
+        "avg_review_score": 3.815,
+        "avg_delivery_days": 20.987
       },
       {
         "customer_state": "BA",
         "order_count": 3358,
         "total_gmv": 511349.99,
-        "avg_review_score": 3.814,
+        "avg_review_score": 3.815,
         "avg_delivery_days": 19.248
       },
       {
         "customer_state": "PE",
         "order_count": 1648,
         "total_gmv": 262788.03,
-        "avg_review_score": 3.953,
+        "avg_review_score": 3.955,
         "avg_delivery_days": 18.279
       },
       {
         "customer_state": "ES",
         "order_count": 2025,
         "total_gmv": 275037.31,
-        "avg_review_score": 3.991,
+        "avg_review_score": 3.988,
         "avg_delivery_days": 15.649
       },
       {
         "customer_state": "GO",
         "order_count": 2007,
         "total_gmv": 294591.95,
-        "avg_review_score": 3.993,
+        "avg_review_score": 3.994,
         "avg_delivery_days": 15.403
-      },
-      {
-        "customer_state": "SC",
-        "order_count": 3612,
-        "total_gmv": 520553.34,
-        "avg_review_score": 4.004,
-        "avg_delivery_days": 15.002
       },
       {
         "customer_state": "DF",
         "order_count": 2125,
         "total_gmv": 302603.94,
-        "avg_review_score": 4.014,
+        "avg_review_score": 4.004,
         "avg_delivery_days": 12.959
+      },
+      {
+        "customer_state": "SC",
+        "order_count": 3612,
+        "total_gmv": 520553.34,
+        "avg_review_score": 4.005,
+        "avg_delivery_days": 15.002
       }
     ]
   }
