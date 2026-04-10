@@ -392,21 +392,12 @@ if page.startswith("📊"):
         }
         colors_list = [STATUS_COLORS.get(s, SUBTEXT) for s in status_counts.index]
         total_sc = status_counts.sum()
-        # Only label slices >= 3% of total; tiny slices get empty labels
-        labels_clean = [
-            lbl if (val / total_sc) >= 0.03 else ""
-            for lbl, val in zip(status_counts.index, status_counts.values)
-        ]
         fig2 = go.Figure(go.Pie(
             labels=status_counts.index,
             values=status_counts.values,
             hole=0.62,
             marker=dict(colors=colors_list, line=dict(color=BG, width=2)),
-            text=labels_clean,
-            textinfo="text+percent",
-            texttemplate="%{text}<br><b>%{percent}</b>",
-            insidetextorientation="horizontal",
-            textposition="outside",
+            textinfo="none",
             hovertemplate="<b>%{label}</b><br>%{value:,} orders (%{percent})<extra></extra>",
             showlegend=True,
         ))
