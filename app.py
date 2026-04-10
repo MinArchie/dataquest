@@ -391,18 +391,39 @@ if page.startswith("📊"):
             "created":"#14B8A6","approved":"#F97316",
         }
         colors_list = [STATUS_COLORS.get(s, SUBTEXT) for s in status_counts.index]
+        total_sc = status_counts.sum()
+        # Only label slices >= 3% of total; tiny slices get empty labels
+        labels_clean = [
+            lbl if (val / total_sc) >= 0.03 else ""
+            for lbl, val in zip(status_counts.index, status_counts.values)
+        ]
         fig2 = go.Figure(go.Pie(
-            labels=status_counts.index, values=status_counts.values,
-            hole=0.62, marker=dict(colors=colors_list, line=dict(color=BG, width=2)),
-            textinfo="label+percent",
+            labels=status_counts.index,
+            values=status_counts.values,
+            hole=0.62,
+            marker=dict(colors=colors_list, line=dict(color=BG, width=2)),
+            text=labels_clean,
+            textinfo="text+percent",
+            texttemplate="%{text}<br><b>%{percent}</b>",
+            insidetextorientation="horizontal",
+            textposition="outside",
             hovertemplate="<b>%{label}</b><br>%{value:,} orders (%{percent})<extra></extra>",
+            showlegend=True,
         ))
         fig2.add_annotation(
-            text=f"<b>{status_counts.sum():,}</b><br>orders",
-            x=0.5, y=0.5, font=dict(size=16, color=TEXT, family="Inter"),
+            text=f"<b>{total_sc:,}</b><br><span style='font-size:11px'>orders</span>",
+            x=0.5, y=0.5, font=dict(size=15, color=TEXT, family="Segoe UI"),
             showarrow=False,
         )
-        chart_layout(fig2, height=280, title="Order Status Mix", showlegend=False)
+        chart_layout(fig2, height=280, title="Order Status Mix", showlegend=True,
+                     margin=dict(l=10, r=10, t=40, b=10))
+        fig2.update_layout(
+            legend=dict(
+                orientation="v", x=1.02, y=0.5, xanchor="left", yanchor="middle",
+                font=dict(size=11, color=TEXT), bgcolor="rgba(0,0,0,0)",
+                itemsizing="constant",
+            )
+        )
         st.plotly_chart(fig2, use_container_width=True)
 
     # ── ROW 3: TREEMAP + DAY-OF-WEEK ─────────────────────────────
