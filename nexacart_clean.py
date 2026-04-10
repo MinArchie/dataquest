@@ -224,14 +224,16 @@ print(f"      [OK] Category translation: {cat_trans.shape[0]} rows")
 # ---- DEDUPLICATE GEOLOCATION -------------------------------------
 print("\n[+] Deduplicating geolocation_dataset...")
 geolocation = strip_strings(geolocation)
-geo_col = geolocation.columns[0]  # zip_code_prefix
-geolocation.rename(columns={geo_col: "zip_code_prefix"}, inplace=True)
+# Columns are: geolocation_zip_code_prefix, geolocation_lat, geolocation_lng, geolocation_city, geolocation_state
+geolocation.rename(columns={
+    "geolocation_zip_code_prefix": "zip_code_prefix",
+    "geolocation_state": "geo_state",
+}, inplace=True)
 geo_dedup = geolocation.drop_duplicates(subset="zip_code_prefix", keep="first").copy()
 print(f"      Geolocation before dedup: {geolocation.shape[0]:,} -> after: {geo_dedup.shape[0]:,}")
 
 # Only keep zip + state (drop lat/lng to keep master CSV lean)
-geo_state = geo_dedup[["zip_code_prefix", "state"]].copy()
-geo_state.rename(columns={"state": "geo_state"}, inplace=True)
+geo_state = geo_dedup[["zip_code_prefix", "geo_state"]].copy()
 
 
 # ---- BUILD MASTER MERGED DATAFRAME --------------------------------
@@ -281,9 +283,8 @@ master["product_category_name_english"] = master["product_category_name_english"
 
 # Step 9: Merge geolocation on customer zip code
 print("  [9] Merge geolocation on customer zip_code_prefix")
-customers_zip_col = "customer_zip_code_prefix"
-geo_state.rename(columns={"zip_code_prefix": "customer_zip_code_prefix"}, inplace=True)
-master = master.merge(geo_state, on=customers_zip_col, how="left")
+geo_state_merge = geo_state.rename(columns={"zip_code_prefix": "customer_zip_code_prefix"})
+master = master.merge(geo_state_merge, on="customer_zip_code_prefix", how="left")
 
 print(f"\n  [OK] Master DataFrame shape: {master.shape}")
 print(f"  [OK] Columns ({len(master.columns)}): {list(master.columns)}")
